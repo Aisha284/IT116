@@ -13,7 +13,7 @@ h2{
     color:blueviolet;
     text-align: center;
     font-weight: 1000;
-    text-decoration: pink underline;
+    text-decoration: rgb(76, 50, 54) underline;
 }
 
 h3{
@@ -24,7 +24,7 @@ h3{
 }
 
 p{
-    color: rgb(54, 101, 123);
+    color: rgb(20, 114, 157);
    line-height: 1.5;
    letter-spacing: 0.3ex;
     font-weight: 1000;
