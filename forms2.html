@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<!---->
+<body>
+    <section>
+        <h1>Please Fill Out The Form Below</h1>
+        <form action="/tacos">
+
+            <p>
+                <label for="fname">First Name:</label>
+                <input id="fname" type="text" placeholder="First Name" name="fname">
+
+            </p>
+
+             <p>
+                <label for="lname">Last Name:</label>
+                <input id="lname" type="text" placeholder="Last Name" name="lname">
+        
+
+            </p>
+            
+            <p>
+                <label for="favfood">Which Food Would You Like To Eat?</label>
+
+                <select name="favorite" id="favfood">
+
+                    <Option value="Chicken">Chicken</Option>
+                    
+                    <Option value="Beef">Beef</Option>
+
+                    <Option Value="Fish">Fish</Option>
+
+                </select>
+            </p>
+
+            <P>
+                <label for="requests">Do You Have Any Allergies?</label>
+                <textarea id="requests" name="reqs" rows="15" cols="15" placeholder="Hey Aisha!"></textarea>
+
+            </P>
+            <button>Send</button>
+    </form>
+    </section>
+    
+
+</body>
+</html>
