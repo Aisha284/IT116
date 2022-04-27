@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<!--We are creating forms today, Passing data from the the form to client and server-->
+<body>
+    <section>
+        <h1>UserName and Password</h1>
+            <form action="/tacos">
+ <!--Once I create a form tag I make a action this is where all of the info in the form is going to go-->
+                <p>
+<!--The lable is object oriented and I binded it by a ID "username" is my ID and allowed me to make my lable-->
+                    <label for="username">Enter A Name:</label>
+                    <input id="username" type="text" placeholder="Username" name="username">
+<!--Attributes of the element input-->
+            
+                </p>
+<!--I changed the ID's and the names becuase I am binding the lable for the text box to the password box-->
+                <p>
+                    <label for="password">Enter A Pasword:</label>
+                    <input id="password" type="text" placeholder="Password" name="password">
+                </p>
+<!--Buttons are INSIDE the form-->>   
+            <button>Submit Button</button>     
+            </form>
+    </section>
+
+    <hr>
+<!--Query strings more about action -->
+    <section>
+        <h1>Query Strings</h1>
+<!--I set the path location to where my action is going to go-->
+            <form action="https://www.reddit.com/r/BTS/search/">
+<!--I made a input box that is going to append my action when I click the submit button I made-->
+                <input types="text" name="q">
+                <button>Submit Reddit</button>
+<!--Query string takes all the info from the text box and sends it across the server Client to server-->
+            </form>
+<!--I went to the end of the search query in order to build out the input becuase everything in the search box is going to append to the action link-->
+            <form action="https://www.youtube.com/results?search_query=">
+                <input type=" "text" name="q">
+                <button>Search Youtube</button>
+
+            </form>
+ <!--Query string takes all the info from the text box and sends it across the server to the Client to server-->
+
+            <form action="https://www.google.com/search">
+
+                <input type="text" name="q">
+                <button>Google Search</button>
+            </form>
+    
+</section>
+<hr>
+<!--Now I am making radio buttons and checkboxes-->
+<section>
+    <h1>Radio Buttons and checkboxes</h1>
+        <form action="birds">
+<!--The id is "agree" both have "agree" so they can bind-->
+            <label for="agree"> I agree to everything</label>
+            <input type="checkbox" name="agree_tos" id="agree">
+
+<!--the type has a attribute and its called checkbox-->
+             <p>
+                <label for="s">Small</label>
+                <input type="radio" name="size" id="s" value="small">
+
+                <label for="m">Medium</label>
+                <input type="radio" name="size" id="m" value="medium">
+
+                <label for="l">Large</label>
+                <input type="radio" name="size" id="l" value="Large">
+
+        
+<!--I set values as attributes inside my elemet tags (s,m,l)-->
+
+            </p>
+
+            <p>
+                <label for="favColor">What is your favorite color?</label>
+
+                <select name="favorite" id="favColor">
+
+                    <option value="Red">Red</option>
+
+                    <option value="Blue">Blue</option>
+
+                    <option value="Green">Green</option>
+
+
+                </select>
+<!--I made a label for the combo box that has options I then binded the label and control by the ID-->
+            </p>
+
+            <p>
+                <label for="scroll">Aisha's Scrollbar</label>
+                <input type="range" id="scroll" min="5" max="10" name="scrollbar">
+            </p>
+<!--I have attributes (max and min) in my scroll bar inwhich I gave it a ID of range and binded scroll and scrollbar -->
+            <p>
+                <label for="requests">Type Into This Box</label>
+                <textarea id="requests" name="reqs" rows="15" cols="15" placeholder="Type Something Here!"></textarea>
+            
+            </p>
+
+            <button>Submit Button</button>
+        </form>
+    </section>
+    <hr>
+<!--New Section for my header -->
+    <section>
+        <h2>Form Validation</h2>
+         <form action="/bananas">
+<!--Error checking a control as I put in attributes in the tag to do this -->
+                <label for="required1"></label>
+                <input type="text" name="funny" id="required1" required>
+
+<!--I made a label thats attaached to the control and binded it using "reuired"-->
+                <label for="length"></label>
+                <input type="text" name="lenghthy" id="length" minlength="5" maxlength="10">
+
+            <p>
+
+                <input type="email" required>
+
+            </p>
+
+        </input>
+        <button>Submit Button</button>
+    </form>
+</section>
+
+
+</body>
+</html>
