@@ -7,25 +7,25 @@
     <title>Forms</title>
 </head>
 
-<!---->
+<!--I made a form with labels-->
 <body>
     <section>
         <h1>Please Fill Out The Form Below</h1>
         <form action="/tacos">
-
+<!--The label and the input element are binded by the id fname short for first name-->
             <p>
                 <label for="fname">First Name:</label>
                 <input id="fname" type="text" placeholder="First Name" name="fname">
 
             </p>
-
+<!--I changed the attribues so the element input and label are binded by lname short for last name-->
              <p>
                 <label for="lname">Last Name:</label>
                 <input id="lname" type="text" placeholder="Last Name" name="lname">
         
 
             </p>
-            
+<!--I made a labeled combobox were you can select from my three options, I also binded the control through the id (favfood)-->
             <p>
                 <label for="favfood">Which Food Would You Like To Eat?</label>
 
@@ -39,12 +39,13 @@
 
                 </select>
             </p>
-
+<!--I created a textarea with attributes were I set the width and The height and a placeholder-->
             <P>
                 <label for="requests">Do You Have Any Allergies?</label>
                 <textarea id="requests" name="reqs" rows="15" cols="15" placeholder="Hey Aisha!"></textarea>
 
             </P>
+<!--Buttons are always inside forms!! and this is gonna send the order-->
             <button>Send</button>
     </form>
     </section>
