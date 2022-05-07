@@ -1,5 +1,40 @@
-body {
+.crimson {
 
     color:crimson;
 
+}
+
+.green {
+
+    color:green
+
+}
+
+.yellow {
+
+    color:rgb(201, 208, 2);
+
+}
+
+.red {
+
+    color:red;
+
+}
+
+.orange {
+
+    color:rgb(188, 123, 4);
+}
+
+#yes {
+
+    background-color: green;
+    color: white
+}
+
+#no {
+
+    background-color: rgb(255, 0, 0);
+    color: white
 }
