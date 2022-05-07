@@ -39,13 +39,13 @@
 
     color: black;
     }   
-/*Descendent selector inwching a anchor tag is inside the footer */
-    footer  a {
+/*Descendent selector with a anchor tag that is inside the footer */
+    footer > a {
 
         color:black;
 }
 
-/**/
+/*Attribute selector where I call the input element and selct the attribute type= */
 input[type="password"]{
 
     color:green;
@@ -61,15 +61,25 @@ a[href*="google"]{
     color:darkcyan;
 
 }
-
+/**/
 button:hover {
 
     background-color: black;
     color:rgb(255, 255, 255)
 }
-
+/**/
 .post button:active {
 
 background-color: blueviolet;
 
+}
+/**/
+h2::first-letter {
+
+    font-size: 50px;
+}
+/**/
+p::first-line {
+
+    color:rgb(255, 255, 255);
 }
