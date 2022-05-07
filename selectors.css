@@ -1,37 +1,41 @@
+/* Class selector element for The Originals and Scandal */
 .crimson {
 
     color:crimson;
 
 }
-
+/*Class selector element for Queen of The South and Erased*/
 .green {
 
     color:green
 
 }
-
+/*Class selector element for White Collar*/
 .yellow {
 
     color:rgb(201, 208, 2);
 
 }
+/*Class selector element for Prison Break, Death Note, and Anatomy of A Scandal*/
 
 .red {
 
     color:red;
 
 }
+/*Class selector element for Family*/
 
 .orange {
 
     color:rgb(188, 123, 4);
 }
-
+/*# is for the ID selector element for the yes button*/
 #yes {
 
     background-color: green;
     color: white
 }
+/*# is for the ID selector element for the no button*/
 
 #no {
 
