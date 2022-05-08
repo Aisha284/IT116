@@ -56,29 +56,29 @@ input[type="text"]{
     color:rgb(87, 168, 253);
 
 }
-/**/
+/*a specifies the anchor tag and href is the attribute this specifies the characters Im looking for in the href string value the *= anything that has the word google in it */
 a[href*="google"]{
     color:darkcyan;
 
 }
-/**/
+/*I have pseudo classes for each of the objects. Everytime I hover over the button its going to be black, the css selector is going to chnage all the buttons*/
 button:hover {
 
     background-color: black;
     color:rgb(255, 255, 255)
 }
-/**/
+/*I called the class post in the css file so all the buttons inside the post will be active but you have to call the button elements and then I gave it the pseudo class and put the css rules inside the {}*/
 .post button:active {
 
 background-color: blueviolet;
 
 }
-/**/
+/*Im using a pseudo element but before i use it i called the h2 element and used :: as the pseudo element and this makes every h2 tag change the first lettersd font */
 h2::first-letter {
 
     font-size: 50px;
 }
-/**/
+/*I used the pseudo elemnt which makes the first line of my <p> element is green */
 p::first-line {
 
     color:rgb(255, 255, 255);
