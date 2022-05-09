@@ -1,0 +1,19 @@
+/*links to anchor tag desecendents of header and changes the font and color  */
+h1> a{
+
+font-size: 30px;
+color:green;
+
+}
+/**the pound sign represnts the ID descendent selctor, this allowed me to cchange the color of my hobbies*/
+#hobby > a {
+
+color:seagreen;
+
+}
+/**the pound sign represnts the ID desecendents selctor, this allowed me to change the color of where I went to school to sea green*/
+#school > a {
+
+color:seagreen;
+
+}
