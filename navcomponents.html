@@ -6,61 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-<!---->
+<!--Imported the CSS file where I linked my html file to the third party CSS page-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
-<!---->
+<!--Called the navbar class which exapands and the navbar is light same with the background all of it is inside the navigation element -->
     <nav class="navbar navbar-expand-md navbar-light bg-light">
-<!---->
+<!--This is a nested div class (the container) inside the navigation its class is container fluid since it will go across the screen-->
         <div class="container-fluid">
-            <!---->
+ <!--Inside the div I have the branding of the navigation bar, so I have a anchort tag class that = navbar brand and then a link with a image inside the <a> that I adjusted the width and height, a class is called next and then tag is closed-->
             <a class="navbar-brand" href="https:google.com">
                 <img src="https://www.kindpng.com/picc/m/499-4991371_attack-on-titan-logo-png-transparent-png.png"
                 alt="" width="30" height="24" class="d-inline-block align-text-top">
                 Branding
             </a>
 
-<!--Hamburger menue: TYPE OTHER COMMENTS ABOUT THE CLASS REFRENCE-->
-            <button class="navbar-toggler" type="button" data-bs-target="#navbar1">
+<!--Hamburger menue: TYPE OTHER COMMENTS ABOUT THE CLASS REFRENCE The button has a navbar toggler with a type attribute being button and then the data is pointed to where its going to collapse this allows the hidden button to collapse's when it reachs breaking point -->
+            <button class="navbar-toggler" type="button" data-bs-target="collapse" data-bs-target="#navbar1">
                 <span class="navbar-toggler-icon"></span>
             </button>
-<!---->
+<!--A nested div with a class attribute of "collapse navbar-collapse" (from the third part) with class libraires and id that equals navbar1 to the navigation class-->
             <div class="collapse navbar-collapse" id="navbar1">
-<!---->
-                    <ul class="navbar-nav">
+<!--Unordered list inside the full container with line items with anchortags with the class library "nav" link with the href the reference -->
+                     <ul class="navbar-nav">
 
-                        <li class="nav-item active">
-                            <a class="nav-link" href="https://www.nytimes.com">First</a>
-                        </li>
+                         <li class="nav-item active">
+                                <a class="nav-link" href="https://www.nytimes.com">First</a>
+                         </li>
 
-                        <li class="nav-item active">
-                            <a class="nav-link" href="https://www.nytimes.com">Second</a>
-                        </li>
+                         <li class="nav-item active">
+                                <a class="nav-link" href="https://www.nytimes.com">Second</a>
+                         </li>
 
-                        <li class="nav-item active">
-                            <a class="nav-link" href="https://www.nytimes.com">Third</a>
-                        </li>
-
+                          <li class="nav-item active">
+                                <a class="nav-link" href="https://www.nytimes.com">Third</a>
+                         </li>
+<!--Refrenced the drop down class library with a nested anchor taf that has a unordered list -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="" role="button"  data-bs-target="dropdown">More</a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="https://www.espn.com" class="dropdown-item">FirstDropdown</a>
-                                </li>
-                            </ul>
+                                <a class="nav-link dropdown-toggle" href="" role="button"  data-bs-target="dropdown">More</a>
+                                <ul class="dropdown-menu">
+                                        <li>
+                                <a href="https://www.espn.com" class="dropdown-item">FirstDropdown</a>
+                                        </li>
+                                </ul>
                         </li>
-
-
-
-                    </ul>
-
-
+                        </ul>
             </div>
-
         </div>
     </nav>
-<!---->
+<!--Imported the Java script file-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
