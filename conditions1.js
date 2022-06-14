@@ -31,7 +31,7 @@ let randomNumber = Math.random(); //0.0-1
     //console.log("You have the correct Day from the variable");
 // }
 //Application that takes in a number and whatever that number is it will run through a number of if condtions and which ever the condtions matched it will show a output
-const age = prompt ("Enter An Age");
+//const age = prompt ("Enter An Age");
 //Created a varible with a if condition, with condtions (age) is less then any of the numbers in the else if statment it will run the code inside the block
 //if (age <5) {
 
@@ -51,7 +51,7 @@ const age = prompt ("Enter An Age");
 // }
 //Cleaner case statments, put break stat, inbetween case state, inorder to break out of switch/loop and I added a default incase all of them fail
 const fruit = 'Papayas';
-
+//Switch statment.  declared our varible and manipulated it by passing it into the control structure for the condition and passed the varible in the argument parapeter. Insed the switch statment we hace the case statments and the console.log. And a default id everything bombs out. Also put a break statement in between each case statment so it can break out of a switch/loop. Looks much cleaner
 switch (fruit) {
 
     case 'Orange':
