@@ -50,7 +50,7 @@ else {
 }
 
 const fruit = 'Papayas';
-// Cleaner case statments put a break statments. in between case statments. to break out of a switch/loop, I also added a default if everything bombs out
+// Cleaner case statments, put a break in between case statments to break out of a switch/loop, I also added a default if everything bombs out
 //Switch statment.  declared our varible and manipulated it by passing it into the control structure for the condition and passed the varible in the argument parapeter. Insed the switch statment we hace the case statments and the console.log. And a default id everything bombs out. Also put a break statement in between each case statment so it can break out of a switch/loop. Looks much cleaner
 switch (fruit) {
 
@@ -70,10 +70,7 @@ switch (fruit) {
         console.log("Last Resort If All Conditions Fail");
 }
 ///if condition with a nested if condition
-//Once password is enterend. The first if statement checks for the password length
-//if met moves on to check for spaces if yes spaces will run
-// "pswd cant have spces" if no space will be vaild
-//if first condition is not met will run else "pswd is too short"
+//Once password is enterend. The first if statement checks for the password length met, Then it checks it a 2nd time to see if has any spaces and returns -1 if the password is not found,  if no spaces it will work. if the first condition is not met it will run else "password is too short"
 const password = prompt("Enter in a new password");
 if (password.length >= 6) {
     if (password.indexOf('') ===-1) {
@@ -84,20 +81,20 @@ if (password.length >= 6) {
 } else {
     console.log("Password is too short");
 }
-//declarations
+//Function header and the name if the function witht the argument parameter with a console.log
 
 function singSong() {
     console.log("DO");
     console.log("RE");
     console.log("MI");
 }
-//Called singsong three times(Do,Re,Mi,Do,Re,Mi,Do,Re,Mi)
+//Called singsong function three times(Do,Re,Mi,Do,Re,Mi,Do,Re,Mi)
 singSong()
 singSong()
 singSong()
 
-//Template literals are enclosed by backticks ``
-
+//Template literals are enclosed by backticks, this one is inside of the console log (``), they also contain place holders inside imbeded expressions 
+//function named greet which passes in boomer 
 function greet(firstName) {
     console.log(`Hey There, ${firstName}`)
 }
