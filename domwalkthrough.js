@@ -141,14 +141,14 @@ li[i].style.color = 'white';
 //Obtaied everything that has title in it and then accessed it by its index and passed in the class name by putting a period in the begining I also checked the varible by passing it through a argument parameter
 var titles = document.querySelectorAll('.title');
 console.log(titles);
-//Changed the varible and changed the text content by calling the index of zero using the variable 
+//title is zero called the index which put it in a list then put text content which changed the string
 titles[0].textContent = "Hello Aisha, I changed the title";
-//
+//Created odd and even variable and usin g the query selector and returned the node list of everything that has a line item by li called the element mane nth and called the child function and then passed in odd. I did the same thing for the even variable
 var odd = document.querySelectorAll('li:nth-child(Odd)');
 var even = document.querySelectorAll('li:nth-child(even)');
-
+//for loop that iterates through the odd list, called the varible i (interger) which begins at 0 so if i is less then the length of the odd list increment it 
 for (var i = 0; i< odd.length; i++) {
-//
+//Called the varible and the index so for every item in the odd and even list I manipulated the styling by going through every index and changed the attribute sin property styles. 
     odd[i].style.backgroundColor = 'lightpink';
     even[i].style.backgroundColor = 'lightgreen';
     even[i].style.color = 'whitesmoke';
