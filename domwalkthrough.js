@@ -95,6 +95,7 @@ items[2].style.color = 'hotpink'
 
 
 //////////////////////////////////////////////////////////////////////////
+
 /////////////////////////////////////////GetElementByTagName
 
 
@@ -113,19 +114,43 @@ li[1].style.color = 'white';
 for(var i =0; i < li.length; i++) {
 //In the body we called the varible li and passed in the varible from the header [i] and then styled the items
 li[i].style.backgroundColor = 'lightgrey';
-li[i].textContent = "I Chnaged The Items From the DOM";
+li[i].textContent = "I Changed The Items From the DOM";
 li[i].style.color = 'white';
 
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////Query Selector:
-//Created a varubke object using the document class, used var with the header with declartion of document.QS () which called the ID main header
-var header = document.querySelector('#main-header');
-//Changed the style of the header by manipulating the DOM
-header.style.borderBottom = 'solid 4px hotpink';
+//Created a variable object using the document class, used var with the header with declartion of document.QS () which called the ID main header
+//var header = document.querySelector('#main-header');
+//header.style.borderBottom = 'solid 4px hotpink';
 //Variable with the name var input, with the class document query selector and the input which will return the first input inside of the form, and then changed the input for the text value in the input box
-var input = document.querySelector('input')
-input.value = "I just changed the text vlaue in the input box"
+//var input = document.querySelector('input');
+//input.value = "I just changed the text vlaue in the input box";
+//Created a varible called submit and ussed the document.querySelector and in the argument parameter theres input and called the attribute type inside of quotions which creats the varible 
+//var submit = document.querySelector('input[type="submit"]')
+//SubmitEvent.value = "HELLO BUTTON"
+//called the last child of the index it created when it found the entire list of class, it went in the DOM and put into a list from the parent to the last child 
+//var lastItem = document.querySelector('.list-group-item:last-child');
+//lastItem.style.color = 'blue';
+//Going from every other item through the list and the document.QS since im still in the DOM, then called the list group class and then used nth child because I went by 2 for every item in that list. I then called other item to style it.
+//var otherItem = document.querySelector('list-group-item:nth-child(2)');
+//otherItem.style.color = 'green';
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////QuerySelectorALL
+//Obtaied everything that has title in it and then accessed it by its index and passed in the class name by putting a period in the begining I also checked the varible by passing it through a argument parameter
+var titles = document.querySelectorAll('.title');
+console.log(titles);
+//Changed the varible and changed the text content by calling the index of zero using the variable 
+titles[0].textContent = "Hello Aisha, I changed the title";
+//
+var odd = document.querySelectorAll('li:nth-child(Odd)');
+var even = document.querySelectorAll('li:nth-child(even)');
 
+for (var i = 0; i< odd.length; i++) {
+//
+    odd[i].style.backgroundColor = 'lightpink';
+    even[i].style.backgroundColor = 'lightgreen';
+    even[i].style.color = 'whitesmoke';
+    odd[i].style.color = 'whitesmoke';
+}
